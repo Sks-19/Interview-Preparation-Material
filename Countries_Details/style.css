@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.dis {
+  display: none;
+}
+
+.card {
+  width: 15rem;
+  margin: 10px;
+  display: flex;
+  flex: 50%;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px 5px grey;
+}
+
+.card img {
+  height: 200px;
+}
+
+form {
+  display: flex;
+}
+
+.loader {
+  margin: auto;
+  align-items: center;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Autocomplete section start here*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  background-color: dodgerblue !important;
+  color: #fff;
+}
+/* Autocomplete section end here*/
+
+@media only screen and (max-height: 850px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}

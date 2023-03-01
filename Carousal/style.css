@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.carousal {
+  width: 100%;
+  display: flex;
+  height: 300px;
+  margin: auto;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.carousal-item img {
+  width: 500px;
+  height: 300px;
+}
+
+.btn-group button {
+  width: 50px;
+  height: 50px;
+  background-color: #171717;
+  border: 0;
+}
+
+.btn-prev {
+  float: left;
+  margin-top: -180px;
+}
+
+.btn-next {
+  float: right;
+  margin-top: -180px;
+}
+/* 
+.square {
+  height: 0px;
+  width: 0px;
+  border-top: 25px solid transparent;
+  border-right: 50px solid aquamarine;
+  border-bottom: 25px solid transparent;
+  margin: auto;
+  margin-top: 150px;
+} */

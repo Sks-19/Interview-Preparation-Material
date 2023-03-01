@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="carousal">
+        <div class="carousal-item">
+          <img
+            src="https://cdn.pixabay.com/photo/2022/10/16/13/17/road-7525092_640.jpg"
+            alt="first"
+          />
+        </div>
+        <div class="carousal-item">
+          <img
+            src="https://cdn.pixabay.com/photo/2023/01/04/19/40/grass-7697505_640.jpg"
+            alt="second"
+          />
+        </div>
+        <div class="carousal-item">
+          <img
+            src="https://cdn.pixabay.com/photo/2022/01/28/18/32/leaves-6975462_640.png"
+            alt="third"
+          />
+        </div>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn-prev" onclick="prevClicked()">
+          Prev
+        </button>
+        <button type="button" class="btn-next" onclick="nextClicked()">
+          Next
+        </button>
+      </div>
+      <!-- <div class="square"></div> -->
+    </div>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
